@@ -4,13 +4,16 @@
     display: flex;
     flex-direction: row;
     padding: 5px 0;
+    justify-content: space-between;
 }
 
 .logo {
     height: 75px;
+    margin-left: 10px;
 }
 
 h3 {
     color: #ffffff;
-    margin-left: 15px;
+    margin-right: 10px;
+    align-content: end;
 }
