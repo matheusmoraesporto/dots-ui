@@ -15,8 +15,16 @@
     background-color: #3d4956;
     border-radius: 10px;
     border: none;
-    transition: border-color .02s;
-    
+    transition: border-color .02s;   
+}
+
+h3 {
+    margin-bottom: 10px;
+    color: #3d4956;
+}
+
+.devicesDescription {
+    margin-top: 30px;
 }
 
 @media only screen and (max-width: 550px) {

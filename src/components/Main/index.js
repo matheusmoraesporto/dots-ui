@@ -30,9 +30,13 @@ function Main() {
 
     return (
         <div className="Main">
+            <h3>Filtros:</h3>
             <DateField onChange={setSince} value={since} className="dtStart" label="Data inicial" format="DD-MM-YYYY" />
             <DateField onChange={setUntil} value={until} className="dtFinal" label="Data final" format="DD-MM-YYYY" />
             <button onClick={handleDevices} type="button" className="findButton">Buscar logs</button>
+            {devices.length > 0
+                ? <h3 className="devicesDescription">Devices:</h3> : <></>
+            }
             {devices.map(device => (
                 <DeviceTable key={device.deviceUUID} device={device} />
             ))}

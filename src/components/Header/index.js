@@ -6,7 +6,7 @@ function Header() {
     return (
         <header className="Header">
             <img src={AygaLogo} className="logo"></img>
-            <h3>Bem-vindo usuário</h3>
+            <h4>Bem-vindo usuário</h4>
         </header>
     );
 }
