@@ -12,29 +12,31 @@ function formatDate(dateISO) {
 
 function DeviceTable({ device }) {
     return (
-        <table>
-            <thead>
-                <tr>
-                    <th colSpan={2} className="deviceUUID">Device: {device.deviceUUID}</th>
-                </tr>
-                <tr>
-                    <th className="logFields">Data</th>
-                    <th className="logFields">Valor</th>
-                </tr>
-            </thead>
-            <tbody>
-                {
-                    device.signals.map(signal => {
-                        return signal.logs.map((log, i) =>
-                            <tr key={i}>
-                                <td>{formatDate(log.date)}</td>
-                                <td>{log.value}</td>
-                            </tr>
-                        )
-                    })
-                }
-            </tbody>
-        </table>
+        <div className="tableContainer">
+            <table>
+                <thead>
+                    <tr>
+                        <th colSpan={2} className="deviceUUID">Device: {device.deviceUUID}</th>
+                    </tr>
+                    <tr>
+                        <th className="logFields">Data</th>
+                        <th className="logFields">Valor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {
+                        device.signals.map(signal => {
+                            return signal.logs.map((log, i) =>
+                                <tr key={i}>
+                                    <td>{formatDate(log.date)}</td>
+                                    <td>{log.value}</td>
+                                </tr>
+                            )
+                        })
+                    }
+                </tbody>
+            </table>
+        </div>
     );
 }
 
