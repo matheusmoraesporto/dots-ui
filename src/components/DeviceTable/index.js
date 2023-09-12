@@ -1,4 +1,5 @@
 import React from "react";
+import "./styles.css";
 
 function padTo2Digit(num) {
     return num.toString().padStart(2, '0');
@@ -14,11 +15,11 @@ function DeviceTable({ device }) {
         <table>
             <thead>
                 <tr>
-                    <th>{device.deviceUUID}</th>
+                    <th colSpan={2} className="deviceUUID">Device: {device.deviceUUID}</th>
                 </tr>
                 <tr>
-                    <th>Data</th>
-                    <th>Valor</th>
+                    <th className="logFields">Data</th>
+                    <th className="logFields">Valor</th>
                 </tr>
             </thead>
             <tbody>

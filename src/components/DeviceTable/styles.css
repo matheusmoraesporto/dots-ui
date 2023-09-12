@@ -1,0 +1,42 @@
+table {
+    margin-top: 30px;
+    width: 520px;
+    border-radius: 20px;
+}
+
+th {
+    color: #ffffff;
+    background-color: #3d4956;
+}
+
+.deviceUUID {
+    border-radius: 10px 10px 0 0;
+    padding: 15px;
+}
+
+.logFields {
+    padding: 8px;
+}
+
+td {
+    text-align: center;
+    padding: 7px;
+}
+
+tr:nth-child(even) {
+    background: lightgray;
+}
+
+tr:last-child td:first-child {
+    border-radius: 0 0 0 15px;
+}
+
+tr:last-child td:last-child {
+    border-radius: 0 0 15px 0;
+}
+
+@media screen and (max-width: 550px) {
+    table {
+        margin-right: 20px;
+    }
+}
