@@ -1,0 +1,40 @@
+.Main {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.dtStart, .dtFinal {
+    margin-right: 7px !important;
+}
+
+.findButton {
+    padding: 19px 14px;
+    font: inherit;
+    color: #ffffff;
+    background-color: #3d4956;
+    border-radius: 10px;
+    border: none;
+    transition: border-color .02s;
+    
+}
+
+@media only screen and (max-width: 550px) {
+    .Main {
+        display: grid;
+        align-items: center;
+    }
+
+    .findButton,
+    .dtStart,
+    .dtFinal {
+        margin-top: 7px !important;
+        margin-left: 0;
+        margin-right: 20px !important;
+    }
+}
+
+
+.findButton:hover {
+    cursor: pointer;
+    background-color: #5a616a;
+}

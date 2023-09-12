@@ -3,6 +3,7 @@ import DeviceTable from "../DeviceTable";
 import api from '../../service/api';
 import { Dayjs } from "dayjs";
 import { DateField } from "@mui/x-date-pickers";
+import './styles.css';
 
 function Main() {
     const [devices, setDevices] = useState([]);
@@ -28,14 +29,14 @@ function Main() {
     };
 
     return (
-        <>
-            <DateField onChange={setSince} value={since} label="Data inicial" format="DD-MM-YYYY" />
-            <DateField onChange={setUntil} value={until} label="Data final" format="DD-MM-YYYY" />
-            <button onClick={handleDevices} type="button">Buscar logs</button>
+        <div className="Main">
+            <DateField onChange={setSince} value={since} className="dtStart" label="Data inicial" format="DD-MM-YYYY" />
+            <DateField onChange={setUntil} value={until} className="dtFinal" label="Data final" format="DD-MM-YYYY" />
+            <button onClick={handleDevices} type="button" className="findButton">Buscar logs</button>
             {devices.map(device => (
                 <DeviceTable key={device.deviceUUID} device={device} />
             ))}
-        </>
+        </div>
     );
 }
 
