@@ -1,0 +1,16 @@
+.Header {
+    background-color: #3d4956;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0;
+}
+
+.logo {
+    height: 75px;
+}
+
+h3 {
+    color: #ffffff;
+    margin-left: 15px;
+}
