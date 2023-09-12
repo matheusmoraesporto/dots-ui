@@ -1,0 +1,21 @@
+.Footer {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #808790;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+a {
+    margin-left: 15px;
+    color: none;
+}
+
+.fa-github {
+    font-size: 24px;
+    color: #ffffff;
+}
